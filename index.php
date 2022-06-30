@@ -70,6 +70,7 @@
         </div>
     </div>
 </body>
+<<<<<<< HEAD
 <script>
 
 
@@ -204,7 +205,6 @@ function resetForm(){
         }
     );
 }
-
 
 </script>
 
