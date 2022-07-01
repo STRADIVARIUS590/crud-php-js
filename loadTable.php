@@ -22,7 +22,7 @@ function getData(){
                                     <td>".$row['apellido']."</td>
                                     <td>".$row['edad']."</td>
                                     <td><button class='btn btn-danger delete' id='".$row['id']."'>Borrar</button></td>
-                                    <td><button class='btn btn-success edit' id='".$row['id']."' >Edit</button></td>
+                                    <td><button class='btn btn-success edit' id='".$row['id']."' >Editar</button></td>
                                 </tr>";
     }
     echo $htmlTable."</table>";
