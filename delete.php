@@ -6,16 +6,13 @@ include_once 'Database.php';
 $pdo = Database::connect();
 $sql = 'DELETE FROM personas WHERE id = :id';
 $statement = $pdo->prepare($sql);
-
 $statement ->bindParam(':id', $_GET['id'], PDO::PARAM_INT);
  
-
 if($statement->execute()){
     //echo '<h1>fqwerherwqw</h1';
     echo include_once('loadTable.php');
 }else{
     ///error
 }
-
 Database::disconnect();
 ?>

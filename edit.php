@@ -1,14 +1,5 @@
 <?php
 
-/*
-$pdo = Database::connect();
-     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-     $sql = "INSERT INTO customers (name,email,mobile) values(?, ?, ?)";
-     $q = $pdo->prepare($sql);
-     $q->execute(array($name,$email,$mobile));
-     Database::disconnect();
-
- */
 include_once 'Database.php';
 $pdo = Database::connect();
 $sql = 'UPDATE personas SET nombre= ?, apellido=?, edad=? WHERE id = ?';
