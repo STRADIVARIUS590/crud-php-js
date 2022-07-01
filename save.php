@@ -1,7 +1,7 @@
 <?php
 
 include_once 'Database.php';
-var_dump($_GET);
+//var_dump($_GET);
 $pdo = Database::connect();
 $sql = 'INSERT INTO personas (id, nombre, apellido, edad) VALUES (:id, :nombre , :apellido , :edad )';
 $statement = $pdo->prepare($sql);
@@ -12,6 +12,7 @@ $statement ->bindParam(':apellido', $_GET['lastname'], PDO::PARAM_STR);
 $statement ->bindParam(':edad', $_GET['age'], PDO::PARAM_INT);
 
 if($statement->execute()){
+    echo include_once('loadTable.php');
     //echo '<h1>fqwerherwqw</h1';
 }else{
     ///error

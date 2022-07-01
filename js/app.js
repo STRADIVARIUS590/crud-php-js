@@ -106,10 +106,10 @@ function requestAction(data, to){
     const URL = `${to}.php?id=${data.id}&name=${data.name}&lastname=${data.lastname}&age=${data.age}`;
     const xmlhttp = new XMLHttpRequest(); 
         xmlhttp.onload = function(){
-            ///document.getElementById('table').innerHTML = this.responseText;
- 
-            loadTable();    
+            document.getElementById('table').innerHTML = this.responseText;
+            //    loadTable();    
             resetForm();
+            setListener();
             //console.log('edit');
         }
         xmlhttp.open(METHOD, URL, true);       
