@@ -3,7 +3,7 @@
 include_once 'Database.php';
 function getData(){
     $pdo = Database::connect();
-    $query = 'select id, nombre, apellido, edad from personas';
+    $query = 'SELECT id, nombre, apellido, edad FROM personas';
     $sql = $pdo -> prepare($query);
     $sql->setFetchMode(PDO::FETCH_ASSOC);
     $sql->execute();
