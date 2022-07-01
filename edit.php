@@ -21,7 +21,7 @@ $statement ->bindValue(4, $_GET['id']);
 if($statement->execute()){
     // echo include('loadTable.php');  // esto pone una fila con un '1' en el hmtl de la tabla 
 }else{
-    ///error al insertar
+    ///error  
 }
 Database::disconnect();
 ?>

@@ -14,6 +14,8 @@ if($statement->execute()){
     //echo '<h1>fqwerherwqw</h1';
     
 }else{
-    ///error al insertar
+    ///error
 }
+
+Database::disconnect();
 ?>
