@@ -176,7 +176,7 @@ function formAction(e){
 }
 
 function requestAction(data, to){
-    console.log(data);    
+  //  console.log(data);    
     const METHOD = 'GET';
     const URL = `${to}.php?id=${data.id}&name=${data.name}&lastname=${data.lastname}&age=${data.age}`;
     const xmlhttp = new XMLHttpRequest(); 
